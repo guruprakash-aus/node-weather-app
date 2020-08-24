@@ -1,4 +1,4 @@
-console.log("Client Side Java Script file is loaded")
+//console.log("Client Side Java Script file is loaded")
 
 //fetch-api can only be used in the front end and cannot be used in the 
 //back-end javascript
