@@ -13,6 +13,9 @@ const forecast = require('./utils/forecast')
 // express above is a function and we call the function below
 const app = express()
 
+//Port def for Heroku
+const port = process.env.PORT || 3000
+
 //DefinePaths
 const publicDirPath = path.join(__dirname, '../public')
 //viewpath
@@ -126,8 +129,8 @@ app.get('*', (req,res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 })
 
 

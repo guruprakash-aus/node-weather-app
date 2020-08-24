@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
     //This prevents the default behaviour of the browser
     e.preventDefault()
     const location = search.value
-    const addressURL = 'http://localhost:3000/weather?address=' + location
+    const addressURL = '/weather?address=' + location
     messageOne.textContent = "Loading Message"
     messageTwo.textContent = ''
 
