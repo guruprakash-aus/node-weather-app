@@ -34,7 +34,8 @@ weatherForm.addEventListener('submit', (e) => {
         } else {
             messageOne.textContent = data.location
             messageTwo.textContent = 'The Weather is ' + data.temperature + ' degrees. '
-             + data.description + ' predicted.' + 'It feels like ' + data.feelslike + ' degrees'
+             + data.description + ' predicted. ' + 'It feels like ' + data.feelslike + ' degrees. '
+             + 'The Humidity is ' + data.humidity + '%'
             
             //console.log(data.location)
             //console.log(data.temperature)
